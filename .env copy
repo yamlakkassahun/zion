@@ -1,0 +1,20 @@
+#Jwt
+JWT_SECRET=jwtsecret
+JWT_Expiration_Time=3600s
+
+#MongoDb Configration
+MongoDb=mongodb://root:rootpassword@mongodb_container:27017
+MONGODB_HOST=mongodb_container
+MONGODB_PORT=27017
+MONGODB_USER=root
+MONGODB_PASSWORD=rootpassword
+MONGODB_DATABASE=NestJs-TripMONGO_ROOT_USER=devroot
+MONGO_ROOT_PASSWORD=devroot
+MONGOEXPRESS_LOGIN=dev
+MONGOEXPRESS_PASSWORD=dev
+
+#mongo express
+MONGO_ROOT_USER=devroot
+MONGO_ROOT_PASSWORD=devroot
+MONGOEXPRESS_LOGIN=dev
+MONGOEXPRESS_PASSWORD=dev

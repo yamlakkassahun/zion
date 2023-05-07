@@ -1,0 +1,28 @@
+#curent docker compose version
+version: '3.8'
+
+#we will spacifay the services that our project need under this 
+services:
+  api:
+    # image: yamlak/nest-dockerized
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    depends_on:
+      - mongodb_container
+    ports:
+      - 8080:3000
+
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data_container:/data/db
+
+volumes:
+  mongodb_data_container:
+

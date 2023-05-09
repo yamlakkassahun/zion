@@ -11,7 +11,7 @@ services:
     depends_on:
       - mongodb_container
     ports:
-      - 8080:3000
+      - 3000:3000
 
   mongodb_container:
     image: mongo:latest
